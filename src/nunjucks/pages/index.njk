@@ -1,0 +1,24 @@
+{% set title = 'MediaTech Test' %}
+
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>{{ title }}</title>
+		{% include "src/nunjucks/parts/head.njk" %}
+	</head>
+
+	<body>
+
+		{# begin wrapper #}
+		<div class="wrapper">
+
+			{% include "src/nunjucks/parts/content.njk" %}
+
+		</div>	
+		{# end wrapper #}	
+
+		{% include "src/nunjucks/parts/scripts.njk" %}
+	</body>	
+
+</html>
